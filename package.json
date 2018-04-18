@@ -1,8 +1,9 @@
 {
   "name": "salesforce-queries",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A JavaScript SOQL/SOSL Query Builder for the Force.com Platform",
   "main": "build/index.js",
+  "types": "build/index.d.ts",
   "repository": "jpmonette/salesforce-queries.git",
   "homepage": "http://github.com/jpmonette/salesforce-queries",
   "bugs": "https://github.com/jpmonette/salesforce-queries/issues",

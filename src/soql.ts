@@ -1,4 +1,4 @@
-export default class Q {
+export default class SOQL {
   fromText: string;
   fieldList: string[];
   numberOfRows: number | undefined;
@@ -11,17 +11,17 @@ export default class Q {
     this.conditions = [];
   }
 
-  public select = (fields: string[]): Q => {
+  public select = (fields: string[]): SOQL => {
     this.fieldList.push.apply(this.fieldList, fields);
     return this;
   };
 
-  public limit = (limit: number): Q => {
+  public limit = (limit: number): SOQL => {
     this.numberOfRows = limit;
     return this;
   };
 
-  public where = (field: string, operator: string, value: string): Q => {
+  public where = (field: string, operator: string, value: string): SOQL => {
     this.conditions.push({
       field,
       operator,
