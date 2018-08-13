@@ -2,7 +2,7 @@
   <img src="./assets/title.png" alt="salesforce-queries">
 </p>
 <p align="center">
-  <a href="https://travis-ci.org/jpmonette/queries-queries"><img src="https://travis-ci.org/jpmonette/salesforce-queries.svg?branch=master" alt="Build Status"></a> <a href='https://coveralls.io/github/jpmonette/salesforce-queries?branch=master'><img src='https://coveralls.io/repos/github/jpmonette/salesforce-queries/badge.svg?branch=master' alt='Coverage Status' /></a>
+  <a href="https://travis-ci.org/jpmonette/salesforce-queries"><img src="https://travis-ci.org/jpmonette/salesforce-queries.svg?branch=master" alt="Build Status"></a> <a href='https://coveralls.io/github/jpmonette/salesforce-queries?branch=master'><img src='https://coveralls.io/repos/github/jpmonette/salesforce-queries/badge.svg?branch=master' alt='Coverage Status' /></a> <a href="https://www.npmjs.com/package/@jpmonette/salesforce-queries"><img src="https://badge.fury.io/js/salesforce-queries.svg" alt="npm version" height="18"></a> <a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a> <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 
 <p align="center">
@@ -35,7 +35,7 @@ console.log(new SOQL('Account').build());
 
 ## References
 
-* [SOQL and SOSL Reference on Salesforce Developer](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_sosl_intro.htm)
+- [SOQL and SOSL Reference on Salesforce Developer](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_sosl_intro.htm)
 
 <p align="center">
   <br/>
