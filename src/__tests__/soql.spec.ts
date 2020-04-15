@@ -7,8 +7,11 @@ describe('Query generator', () => {
   });
 
   it('should add fields', () => {
-    const query = new SOQL('Account').select(['Id', 'Name', 'BillingCountry']).build();
-    expect(query).toBe(`SELECT Id, Name, BillingCountry FROM Account`);
+    const query = new SOQL('Account')
+      .select(['Id', 'Name', 'BillingCountry'])
+      .select(['Id', 'BillingState'])
+      .build();
+    expect(query).toBe(`SELECT Id, Name, BillingCountry, BillingState FROM Account`);
   });
 
   it('should add limit', () => {

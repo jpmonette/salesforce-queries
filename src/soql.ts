@@ -1,18 +1,18 @@
 export default class SOQL {
   fromText: string;
-  fieldList: string[];
+  fieldList: Set<string>;
   numberOfRows: number | undefined;
   conditions: { field: string; operator: string; value: string }[];
   numberOfRowsToSkip: number | undefined;
 
   constructor(sobject: string) {
     this.fromText = sobject;
-    this.fieldList = [];
+    this.fieldList = new Set();
     this.conditions = [];
   }
 
   public select = (fields: string[]): SOQL => {
-    this.fieldList.push.apply(this.fieldList, fields);
+    this.fieldList = new Set([...this.fieldList, ...fields]);
     return this;
   };
 
@@ -31,8 +31,8 @@ export default class SOQL {
   };
 
   public buildSelect = (): string => {
-    if (this.fieldList.length !== 0) {
-      return 'SELECT ' + this.fieldList.join(', ');
+    if (this.fieldList.size !== 0) {
+      return 'SELECT ' + Array.from(this.fieldList).join(', ');
     } else {
       return 'SELECT Id';
     }
