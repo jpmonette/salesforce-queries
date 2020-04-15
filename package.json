@@ -1,6 +1,6 @@
 {
   "name": "salesforce-queries",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A JavaScript SOQL/SOSL Query Builder for the Force.com Platform",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -16,17 +16,25 @@
     "test": "jest --coverage"
   },
   "devDependencies": {
-    "@types/jest": "^22.2.3",
-    "coveralls": "^3.0.0",
-    "jest": "^22.4.3",
-    "ts-jest": "^22.4.3",
-    "typescript": "^2.8.1"
+    "@types/jest": "^25.2.1",
+    "coveralls": "^3.0.11",
+    "jest": "^25.3.0",
+    "jsdom": "^16.2.2",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.8.3"
   },
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx?)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
