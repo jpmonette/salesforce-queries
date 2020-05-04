@@ -1,7 +1,7 @@
 {
   "name": "salesforce-queries",
-  "version": "0.0.3",
-  "description": "A JavaScript SOQL/SOSL Query Builder for the Force.com Platform",
+  "version": "0.1.0",
+  "description": "A JavaScript SOQL/SOSL Query Builder for the Salesforce Platform, written in TypeScript",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "repository": "jpmonette/salesforce-queries.git",
@@ -20,6 +20,7 @@
     "coveralls": "^3.0.11",
     "jest": "^25.3.0",
     "jsdom": "^16.2.2",
+    "prettier": "^2.0.5",
     "ts-jest": "^25.3.1",
     "typescript": "^3.8.3"
   },
